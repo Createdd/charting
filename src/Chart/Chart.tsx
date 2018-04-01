@@ -8,11 +8,12 @@ import {
   Tooltip,
   Legend
 } from 'recharts';
-import { ChartPropsType } from '.';
 
-export { ChartPropsType } from './types';
+import { ChartPropsType } from './types';
 
-const Chart = (props: ChartPropsType) => (
+const Chart: React.StatelessComponent<ChartPropsType> = (
+  props: ChartPropsType
+) => (
   <LineChart
     width={600}
     height={300}

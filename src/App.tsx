@@ -4,7 +4,6 @@ import './App.css';
 import { AppStateType } from './types';
 
 import Chart, {
-  // ChartPropsType,
   ChartDataType,
 } from './Chart';
 
