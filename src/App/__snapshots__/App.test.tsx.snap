@@ -2,10 +2,10 @@
 
 exports[`renders the component 1`] = `
 <div
-  className="App"
+  className="sc-bdVaJa cgEgPp"
 >
   <header
-    className="App-header"
+    className="sc-bwzfXH gXRUvk"
   >
     <img
       alt="logo"

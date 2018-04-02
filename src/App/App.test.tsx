@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as TestRenderer from 'react-test-renderer';
-import App from './App';
+import { App } from './App';
 
 it('renders the component', () => {
   const result = TestRenderer.create(<App />).toJSON();

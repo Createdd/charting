@@ -1,13 +1,16 @@
 import * as React from 'react';
 
-import './App.css';
 import { AppStateType } from './types';
+import {
+  AppStyle,
+  HeaderStyle
+} from './styles';
 
 import Chart, {
   ChartDataType,
-} from './Chart';
+} from '../Chart';
 
-const logo = require('./logo.svg');
+const logo = require('../logo.svg');
 const data: ChartDataType = [
   { name: 'Page A', uv: 4000, pv: 2400, amt: 2400 },
   { name: 'Page B', uv: 3000, pv: 1398, amt: 2210 },
@@ -28,16 +31,16 @@ class App extends React.Component<any, AppStateType> {
   }
   render(): JSX.Element {
     return (
-      <div className="App">
-        <header className="App-header">
+      <AppStyle>
+        <HeaderStyle>
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
-        </header>
+        </HeaderStyle>
         <h2>Welcome {this.state.currentUser}</h2>
         <Chart data={data}/>
-      </div>
+      </AppStyle>
     );
   }
 }
 
-export default App;
+export {App};
